@@ -1,33 +1,37 @@
-import { Workflow, Database, Bot, Heart, Code2 } from "lucide-react";
+import n8nLogo from "@/assets/n8n-logo.png";
+import supabaseLogo from "@/assets/supabase-logo.jpg";
+import manusLogo from "@/assets/manus-logo.png";
+import lovableLogo from "@/assets/lovable-logo.png";
+import codeLogo from "@/assets/code-languages.webp";
 
 const TechnologiesSection = () => {
   const technologies = [
     {
-      icon: Workflow,
+      logo: n8nLogo,
       name: "n8n",
       description: "Automações e workflows inteligentes",
       color: "from-orange-500/20 to-red-500/20"
     },
     {
-      icon: Database,
+      logo: supabaseLogo,
       name: "Supabase",
       description: "Banco de dados, autenticação e backend",
       color: "from-emerald-500/20 to-green-500/20"
     },
     {
-      icon: Bot,
+      logo: manusLogo,
       name: "Manus",
       description: "Agentes e processos com IA",
       color: "from-blue-500/20 to-cyan-500/20"
     },
     {
-      icon: Heart,
+      logo: lovableLogo,
       name: "Lovable",
       description: "Criação rápida de aplicações modernas",
       color: "from-pink-500/20 to-rose-500/20"
     },
     {
-      icon: Code2,
+      logo: codeLogo,
       name: "Código",
       description: "JavaScript, Python, APIs e mais",
       color: "from-primary/20 to-accent/20"
@@ -63,8 +67,12 @@ const TechnologiesSection = () => {
               <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
               
               <div className="relative z-10">
-                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-muted/50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <tech.icon className="h-8 w-8 text-foreground" />
+                <div className="w-16 h-16 mx-auto mb-4 rounded-2xl bg-muted/50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                  <img 
+                    src={tech.logo} 
+                    alt={tech.name} 
+                    className="w-12 h-12 object-contain"
+                  />
                 </div>
                 
                 <h3 className="font-display font-bold text-foreground mb-2">

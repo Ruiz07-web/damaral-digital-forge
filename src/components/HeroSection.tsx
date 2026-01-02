@@ -1,11 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const HeroSection = () => {
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background effects */}
@@ -42,19 +37,6 @@ const HeroSection = () => {
             Websites, sistemas personalizados e automações inteligentes que escalam negócios.
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animation-delay-400 animate-fade-up">
-            <Button variant="hero" size="xl" onClick={() => scrollToSection("contato")}>
-              Solicitar orçamento
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="whatsapp" size="xl" asChild>
-              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Falar no WhatsApp
-              </a>
-            </Button>
-          </div>
         </div>
 
         {/* Scroll indicator */}
