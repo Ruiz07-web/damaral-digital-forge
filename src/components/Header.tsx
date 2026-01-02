@@ -46,7 +46,7 @@ const Header = () => {
             Solicitar orçamento
           </Button>
           <Button variant="whatsapp" size="sm" asChild>
-            <a href="https://wa.me/5567982249406" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5567982249405" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="h-4 w-4" />
               <span className="hidden sm:inline">WhatsApp</span>
             </a>
