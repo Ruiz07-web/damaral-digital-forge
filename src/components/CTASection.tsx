@@ -30,7 +30,7 @@ const CTASection = () => {
           </p>
 
           <Button variant="whatsapp" size="xl" asChild>
-            <a href="https://wa.me/5567982249406" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5567982249405" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-5 w-5" />
               Falar no WhatsApp
             </a>
