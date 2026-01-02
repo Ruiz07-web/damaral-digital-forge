@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageCircle, Mail } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import patternAbstract from "@/assets/pattern-abstract.jpg";
 
 const CTASection = () => {
@@ -29,21 +29,12 @@ const CTASection = () => {
             Entre em contato e descubra como podemos transformar seu negócio com tecnologia de ponta.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="xl" asChild>
-              <a href="mailto:contato@damaral.ia.br">
-                <Mail className="mr-2 h-5 w-5" />
-                Entrar em contato
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <Button variant="whatsapp" size="xl" asChild>
-              <a href="https://wa.me/5567982249406" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                Falar no WhatsApp
-              </a>
-            </Button>
-          </div>
+          <Button variant="whatsapp" size="xl" asChild>
+            <a href="https://wa.me/5567982249406" target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="mr-2 h-5 w-5" />
+              Falar no WhatsApp
+            </a>
+          </Button>
         </div>
       </div>
     </section>
